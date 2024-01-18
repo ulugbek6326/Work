@@ -26,20 +26,20 @@ SECRET_KEY = 'django-insecure-$w68-99ih5&=@j*!u84&20$h0to2!(6f4guiy93s-y0u@524#x
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ishchilar.onrender.com']
+ALLOWED_HOSTS = ['ishchilar.onrender.com', '127.0.0.1']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'workapp',
+    
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
-    'workapp',
     
     'rest_framework',
 ]
